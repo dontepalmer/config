@@ -14,5 +14,3 @@ alias h='history'
 alias lsa='ls -a'
 alias lsl='ls -l'
 alias cd..='cd ..'
-
-
