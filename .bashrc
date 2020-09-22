@@ -1,4 +1,4 @@
-PS1="MacBook@Pro:\[\e[33m\]\w\[\e[0m\]\$ "
+PS1="tim@Cookie:\[\e[33m\]\w\[\e[0m\]\$ "
 export PS1
 
 export CLICOLOR=1
