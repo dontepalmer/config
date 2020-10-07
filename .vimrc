@@ -1,7 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-highlight Comment ctermfg=green
 
 " -->  GENERAL <--
 
@@ -28,12 +27,14 @@ set title 		" Show title in status bar
 set confirm 		" confirm when exiting file
 set splitbelow
 set splitright
+set clipboard=unnamed
+
 
 filetype on 		" Enable file type detection 
 filetype indent on 	" Enable file type-specific indenting 
 filetype plugin on 	" Enable file type-specific plugins
 
-"------------------------------------------------------
+"-------------------------------------------------------
 
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
@@ -42,7 +43,7 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-"------------------------------------------------------
+"-------------------------------------------------------
 
 " --> PLUGINS <--
 
@@ -86,7 +87,7 @@ Plugin 'gorodinskiy/vim-coloresque' 	" color preview [CSS, HTML]
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-"------------------------------------------------------
+"-------------------------------------------------------
 
 let g:user_emmet_leader_key=',' 	"for emmet[HTML]
 
@@ -96,6 +97,7 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 " faster shortcut for commenting. Requires T-Comment plugin
 map <leader>c <c-_><c-_>
 
-"------------------------------------------------------
-
+"-------------------------------------------------------
 colorscheme peachpuff 
+
+
