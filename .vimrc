@@ -69,6 +69,8 @@ Plugin 'terryma/vim-multiple-cursors' 	" multiple cursors in vim [ctrl + n]
 Plugin 'gorkunov/smartpairs.vim' 	" enhance visual (selection) 		
 Plugin 'joom/vim-commentary' 		" comment code in visual mode with [gc]
 
+Plugin 'davidhalter/jedi-vim'
+
 " --> HTML <--
 Plugin 'othree/html5.vim' 		" HTML syntax auto-complete
 Plugin 'HTML-AutoCloseTag' 		" HTML auto-close tag
@@ -99,5 +101,6 @@ map <leader>c <c-_><c-_>
 
 "-------------------------------------------------------
 colorscheme peachpuff 
+
 
 
