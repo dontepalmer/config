@@ -2,7 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 
-" -->  GENERAL <--
+" --> GENERAL <--
 
 syntax on 		" Enable syntax highlighting 
 
@@ -54,11 +54,11 @@ call vundle#begin()
 " call vundle#begin('~/some/path/here')
 " let Vundle manage Vundle, required
 
-" --> VIM <--
+" " --> VIM <--
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'flazz/vim-colorschemes' 	" color schemes 
-Plugin 'scrooloose/syntastic' 		" syntax checker 
 Plugin 'scrooloose/nerdtree' 		" tree explorer for vim 		
+Plugin 'vim-syntastic/syntastic'
 Plugin 'jiangmiao/auto-pairs' 		" insert quotes, or brackers in pairs
 Plugin 'ervandew/supertab' 		" perform vim insert mode completions with tab 
 Plugin 'tpope/vim-surround' 		" quoting/parenthesizing made simple
@@ -70,6 +70,9 @@ Plugin 'gorkunov/smartpairs.vim' 	" enhance visual (selection)
 Plugin 'joom/vim-commentary' 		" comment code in visual mode with [gc]
 
 Plugin 'davidhalter/jedi-vim'
+
+Plugin 'zxqfl/tabnine-vim'
+Plugin 'ycm-core/YouCompleteMe'
 
 " --> HTML <--
 Plugin 'othree/html5.vim' 		" HTML syntax auto-complete
@@ -103,4 +106,9 @@ map <leader>c <c-_><c-_>
 colorscheme peachpuff 
 
 
+" you complete me
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
+
+:set backspace=indent,eol,start

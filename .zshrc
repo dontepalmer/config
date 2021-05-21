@@ -18,6 +18,8 @@ alias cdd="cd Desktop";
 alias s="source";
 alias e="exit";
 alias cd..="cd .."
+alias pip="pip3"
+
 
 # ZSH_THEME="afowler"
 
@@ -32,3 +34,4 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
